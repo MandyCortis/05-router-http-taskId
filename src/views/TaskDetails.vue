@@ -3,6 +3,7 @@
     <h1>{{task.title}}</h1>
     <p>{{task.time}} on {{task.date}} @ {{task.location}}</p>
     <p>{{task.description}}</p>
+    <p>Test</p>
   </div>
 </template>
 
