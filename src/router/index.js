@@ -20,6 +20,10 @@ const routes = [
     // so we can send in the route params as component props
     props: true,
     component: TaskDetails
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFoundComponent
   }
 ]
 
