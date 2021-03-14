@@ -1,13 +1,20 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!--Instead of using hard-coded paths we will use the names instead-->
+    <!--<router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>-->
+    <router-link :to="{name: 'TasksList'}">Tasks</router-link> |
+    <router-link :to="{name: 'About'}">About</router-link>
   </div>
   <router-view/>
 </template>
 
 <style>
+
 #app {
+  width:90%;
+  margin:auto;
+  border:1px solid black;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
